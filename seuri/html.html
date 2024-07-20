@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar a,
+      .dropbtn {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        border: none;
+        outline: none;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .navbar a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <label id="message" for="change"></label>
+    <button onclick="change()">click me to change</button>
+    <button onclick="mountain()">we are moving to the mountain</button>
+    <button onmouseover="worryout()">fear me</button>
+
+    <details>
+      <summary>Read More</summary>
+      <a href="https://google.com" target="_blank">Google</a>
+    </details>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <div class="dropdown">
+        <button class="dropbtn">Services</button>
+        <div class="dropdown-content">
+          <a href="#service1">Service 1</a>
+          <a href="#service2">Service 2</a>
+          <a href="#service3">Service 3</a>
+        </div>
+      </div>
+      <a href="#contact">Contact</a>
+    </nav>
+  </body>
+</html>
